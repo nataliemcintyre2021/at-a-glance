@@ -1,15 +1,16 @@
 import './Header.css'
+import App from '../App/App'
 
-const Header = () => {
+const Header = ({ todaysDate }) => {
   return (
     <>
     <header>
       <section className="app-title">
         <h1 className="title">At a Glance</h1>
-        <h3 className="tag-line">Top NY Times stories in Art</h3>
+        <h3 className="tag-line">Top NY Times stories in the Arts</h3>
       </section>
       <section className="header-date">
-        <h4>today's date</h4>
+        <h4>{todaysDate}</h4>
       </section>
     </header>
     <hr className="line-break"/>
