@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react'
 import Header from '../Header/Header'
+import Articles from '../Articles/Articles'
 import { getArticles } from '../../apiCalls'
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
   }, [])
 
   return (
+    <>
     <Header todaysDate={todaysDate}/>
+    <Articles articles={articles}/>
+    </>
   )
 }
 
