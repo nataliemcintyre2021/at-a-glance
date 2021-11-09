@@ -1,12 +1,12 @@
 import './Articles.css'
-import '../Card/Card'
+import Card from '../Card/Card'
 
 const Articles = ( { articles }) => {
 
+if (articles) {
   const articleCards = articles.results.map(card => {
     return (
       <Card
-        key={Date.now()}
         title={card.title}
         author={card.byline}
         time={card.updated_date}
@@ -14,10 +14,18 @@ const Articles = ( { articles }) => {
       />
     )
   })
-
   return (
-    {articleCards}
+    [articleCards]
   )
+} else {
+  return (
+    null
+  )
+}
+
+
+
+
 }
 
 
