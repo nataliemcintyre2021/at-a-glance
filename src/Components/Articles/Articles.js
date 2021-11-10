@@ -25,12 +25,10 @@ const Articles = ({ articles }) => {
     const articleCards = articles.results.map(card => {
       return (
         <>
-        <NavLink to={`/${card.title}`} >
+        <NavLink to={`/${card.title}`} style={{ textDecoration: 'none' }}>
           <Card
             title={card.title}
             author={card.byline}
-            time={card.updated_date}
-            image={card.multimedia[0].url}
           />
         </NavLink>
           <hr />
@@ -41,12 +39,10 @@ const Articles = ({ articles }) => {
       const filteredCards = (filteredArticles && filteredArticles.map(card => {
         return (
           <>
-          <NavLink to={`/${card.title}`} >
+          <NavLink to={`/${card.title}`} style={{ textDecoration: 'none'}} >
             <Card
               title={card.title}
               author={card.byline}
-              time={card.updated_date}
-              image={card.multimedia[0].url}
             />
           </NavLink>
           <hr />

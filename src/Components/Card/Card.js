@@ -1,11 +1,10 @@
 import './Card.css'
 
-const Card = ({ title, author, time, image }) => {
+const Card = ({ title, author }) => {
   return (
     <section className='card'>
       <h4>{title}</h4>
       <p>{author}</p>
-      <p>{time}</p>
     </section>
   )
 }
