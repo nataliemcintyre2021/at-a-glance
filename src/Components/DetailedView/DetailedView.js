@@ -16,7 +16,7 @@ const DetailedView = ({ articles }) => {
         data.results.filter(result => {
           if (result.title === title)
           {
-            console.log(title)
+            console.log("TITLE", title)
             setSelectedArticle(result)
           }
         })

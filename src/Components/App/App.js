@@ -15,7 +15,7 @@ const App = () => {
     getArticles()
       .then(data => {
         setArticles(data)
-        setTodaysDate(data.last_updated)
+        setTodaysDate(data.last_updated.slice(0, 10))
       })
   }, [])
 
