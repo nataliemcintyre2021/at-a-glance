@@ -2,6 +2,7 @@ import './Articles.css'
 import Card from '../Card/Card'
 import Search from '../Search/Search'
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Articles = ({ articles }) => {
 
@@ -24,13 +25,15 @@ const Articles = ({ articles }) => {
     const articleCards = articles.results.map(card => {
       return (
         <>
-        <Card
-          title={card.title}
-          author={card.byline}
-          time={card.updated_date}
-          image={card.multimedia[0].url}
-        />
-        <hr />
+        <NavLink to={`/${card.title}`} >
+          <Card
+            title={card.title}
+            author={card.byline}
+            time={card.updated_date}
+            image={card.multimedia[0].url}
+          />
+        </NavLink>
+          <hr />
         </>
       )
     })
@@ -38,12 +41,14 @@ const Articles = ({ articles }) => {
       const filteredCards = (filteredArticles && filteredArticles.map(card => {
         return (
           <>
-          <Card
-            title={card.title}
-            author={card.byline}
-            time={card.updated_date}
-            image={card.multimedia[0].url}
-          />
+          <NavLink to={`/${card.title}`} >
+            <Card
+              title={card.title}
+              author={card.byline}
+              time={card.updated_date}
+              image={card.multimedia[0].url}
+            />
+          </NavLink>
           <hr />
           </>
         )
