@@ -6,10 +6,11 @@ const Card = ({ title, author, time, image }) => {
       <h4>{title}</h4>
       <p>{author}</p>
       <p>{time}</p>
-      <image src={image}/>
     </section>
   )
 }
 
 
 export default Card;
+
+  // <img src={image}/>
