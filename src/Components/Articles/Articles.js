@@ -10,10 +10,9 @@ const Articles = ({ articles }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const filterArticles = event => {
-    const searchWord = event.target.value
-    if (searchWord) {
+    if (searchInput) {
       const foundArticles = articles.results.filter(article => {
-        if (article.title.includes(searchWord.toLowerCase())) {
+        if (article.title.toLowerCase().includes(searchInput.toLowerCase())) {
           return article
         }
       })
