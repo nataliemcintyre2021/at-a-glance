@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# At A Glance
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table Of Contents
 
-## Available Scripts
++ [Overview](#overview)
++ [Examples](#examples)
++ [Setup instructions](#setup-instructions)
++ [Learning Goals](#learning-goals)
++ [Future features](#future-features)
++ [Technologies used](#technologies-used)
++ [Contributors](#contributors)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This is a news application created for users to quickly access top articles in the New York Times related to the Arts. Users can quickly ("At a Glance") see headlines, search for articles, and click on articles to see additional details. User can then access the full article on New York Times site upon desire to read me.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Motivation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This application was created as the [Take Home Challenge](https://mod4.turing.edu/projects/take_home/take_home_fe) as part of Module 4 for [Turing School of Software & Design](https://turing.edu/). Rubric given [here](https://mod4.turing.edu/projects/take_home/take_home_rubric). An 8 hour time limit was given to meet MVP of project.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Examples
 
-### `npm run build`
+![AtAGlance_mobile](https://user-images.githubusercontent.com/78229679/141484022-a5751c17-43ac-49b2-80a9-e96a62410439.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![AtAGlance_responsive](https://user-images.githubusercontent.com/78229679/141484050-ab286e8e-5b28-4fd6-b81b-6b05c4c8de23.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Access App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### View App Locally
 
-### `npm run eject`
+Run the following codes in the terminal, in this order.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Clone the project repository: `git clone` repository name
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Navigate to the folder
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Install dependencies: `npm install`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Run local host: `npm start`
 
-## Learn More
+If it doesn't automatically open, navigate to [http://localhost:3000](http://localhost:3000) in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Use App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When a user lands on home page of application, they will see the heading, tagline and today's date. Following the heading the user will see a list of articles and authors posted from the New York Times Top Stories Arts section for the day (utilizes the New York Times Top Stories API). User can then click any story to be taken to details page where they will see additional information including image, abstract, and link to read full article. User can also live search for articles from the home page to see article titles render that match their search criteria.
 
-### Code Splitting
+## Learning Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The main goals of this project were to learn to prioritize meeting MVP with time constraints and demonstrate a strong understanding of React JS and Front-End best practices.
 
-### Analyzing the Bundle Size
+## Future Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Build out more responsive desktop view
 
-### Making a Progressive Web App
+* User can view other categories of the NY Times Top Stories by filter feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* User can see additional details on details page
 
-### Advanced Configuration
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Utilizes JavaScript, React, CSS, HTML/JSX, NPM, Cypress
 
-### Deployment
+Built with Atom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[Project board on GitHub](https://github.com/nataliemcintyre2021/at-a-glance/projects/1)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+👤  **Natalie McIntyre**
+- [GitHub](https://github.com/nataliemcintyre2021)
+- [LinkedIn](https://www.linkedin.com/in/nataliemcintyre1/)
