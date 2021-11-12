@@ -49,7 +49,7 @@ When a user lands on home page of application, they will see the heading, taglin
 
 The main goals of this project were to learn to prioritize meeting MVP with time constraints and demonstrate a strong understanding of React JS and Front-End best practices.
 
-## Future Features
+## Future Features and Fixes
 
 * Build out more responsive desktop view
 
@@ -58,6 +58,8 @@ The main goals of this project were to learn to prioritize meeting MVP with time
 * User can see additional details on details page
 
 * Add additional error handling and loading component while fetching data from API
+
+* Build out sad path testing
 
 ## Technologies Used
 
