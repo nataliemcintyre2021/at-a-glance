@@ -6,21 +6,21 @@ import { useParams } from 'react-router-dom'
 const DetailedView = ({ articles }) => {
 
   const [selectedArticle, setSelectedArticle] = useState()
+  const [loading, setLoading] = useState(true)
   let { title } = useParams()
 
   useEffect(() => {
-    console.log("here")
-    console.log("title", title)
     getArticles()
       .then(data => {
         data.results.filter(result => {
           if (result.title === title)
           {
-            console.log("TITLE", title)
             setSelectedArticle(result)
+            setLoading(false)
           }
         })
       })
+
   }, [])
 
 
@@ -28,7 +28,8 @@ const DetailedView = ({ articles }) => {
 
   return (
 <>
-  { selectedArticle ?
+{console.log("selectedArticle", selectedArticle)}
+  { selectedArticle && !loading ?
     <section className="the-details">
       <div className="the-details-card">
         <h1 className="heading-details">{ selectedArticle.title }</h1>
