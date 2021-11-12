@@ -1,0 +1,48 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2021 The New York Times Company. All Rights Reserved.",
+    "section": "Arts",
+    "last_updated": "2021-11-09T15:18:04-05:00",
+    "num_results": 34,
+    "results": [
+        {
+            "section": "arts",
+            "subsection": "television",
+            "title": "‘Dickinson’ Uses the Civil War to Explore Modern Divisions",
+            "abstract": "The creator Alena Smith had planned to set the final season during the conflict. “What we did not know was that there would be a pandemic, and that it would have echoes of the Civil War,” she said.",
+            "url": "https://www.nytimes.com/2021/11/09/arts/television/dickinson-final-season.html",
+            "uri": "nyt://article/09c14991-a621-5dfe-b847-6c0938ab6035",
+            "byline": "By Sarah Lyall",
+            "item_type": "Article",
+            "updated_date": "2021-11-09T16:56:52-05:00",
+            "created_date": "2021-11-09T14:10:53-05:00",
+            "published_date": "2021-11-09T14:10:53-05:00",
+            "material_type_facet": "",
+            "kicker": "Ask a Showrunner",
+            "des_facet": [
+                "Television",
+                "Dickinson (TV Program)"
+            ],
+            "org_facet": [
+                "Apple TV Plus"
+            ],
+            "per_facet": [
+                "Smith, Alena"
+            ],
+            "geo_facet": [],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2021/11/09/arts/9dickinson-4/merlin_197563416_20d79ff0-8006-475c-b6de-273c3f59736f-superJumbo.jpg",
+                    "format": "superJumbo",
+                    "height": 1152,
+                    "width": 2048,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "“Dickinson,” starring, from left, Toby Huss, Hailee Steinfeld and Jane Krakowski, will end with the current season.",
+                    "copyright": "Apple TV+"
+                }
+            ],
+            "short_url": "https://nyti.ms/3mVevqx"
+        }
+      ]
+    }

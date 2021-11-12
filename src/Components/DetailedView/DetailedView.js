@@ -20,29 +20,24 @@ const DetailedView = ({ articles }) => {
           }
         })
       })
-
   }, [])
 
-
-
-
   return (
-<>
-{console.log("selectedArticle", selectedArticle)}
-  { selectedArticle && !loading ?
-    <section className="the-details">
-      <div className="the-details-card">
-        <h1 className="heading-details">{ selectedArticle.title }</h1>
-        <h5 className="author"> {selectedArticle.byline}</h5>
-        <img src={selectedArticle.multimedia[0].url}/>
-        <h3 className="abstract"> {selectedArticle.abstract}</h3>
-        <a className="url" href={selectedArticle.url}>Read full article here</a>
-      </div>
-    </section> :
-      null
-}
-  </>
-)
+    <>
+      { selectedArticle && !loading ?
+        <section className="the-details">
+          <div className="the-details-card">
+            <h1 className="heading-details">{ selectedArticle.title }</h1>
+            <h5 className="author"> {selectedArticle.byline}</h5>
+            <img src={selectedArticle.multimedia[0].url}/>
+            <h3 className="abstract"> {selectedArticle.abstract}</h3>
+            <a className="url" href={selectedArticle.url}>Read full article here</a>
+          </div>
+        </section> :
+          null
+    }
+    </>
+  )
 }
 
 

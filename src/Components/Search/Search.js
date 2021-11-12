@@ -1,6 +1,6 @@
 import './Search.css'
 
-const Search = ({ filterArticles, setSearchInput, searchInput}) => {
+const Search = ({ filterArticles, setSearchInput, searchInput }) => {
 
   const handleChange = event => {
     event.preventDefault()

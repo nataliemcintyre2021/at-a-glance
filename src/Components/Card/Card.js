@@ -11,5 +11,3 @@ const Card = ({ title, author }) => {
 
 
 export default Card;
-
-  // <img src={image}/>
