@@ -1,6 +1,7 @@
 describe("At a Glance Page User Flows", () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
+    cy.intercept("GET", 'https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=nPVp32YA7sHGkr7BavN6MlRsA3YRLZF4', { fixture: 'news-stories.json', status: 200 })
   })
   describe("Main Page Render", () => {
 
@@ -10,7 +11,24 @@ describe("At a Glance Page User Flows", () => {
     })
 
     it("Should show date in header area", () => {
-      cy.intercept("GET", 'https://api.nytimes.com/svc/topstories/v2/arts**', { fixture: 'news-stories.json', status: 200})
+      cy.get('header').find('.header-date').find('h4').contains('2021-11-09')
+    })
+
+    it("Should show search bar at top of main section", () => {
+      cy.get('.search-container').find('input').invoke('attr', 'placeholder').should('contain', 'Search articles')
+    })
+
+    it("Should show title of article as link", () => {
+      cy.get('a').should('have.attr', 'href').and('include', '/‘Dickinson’ Uses the Civil War to Explore Modern Divisions')
+    })
+
+    it("Should show author of article", () => {
+      cy.get('.card').find('p').contains('By Sarah Lyall')
+    })
+
+    it("Should show details page on click of article", () => {
+      cy.get('a').click()
+      cy.get('.the-details').find('.the-details-card').find('h1').contains('‘Dickinson’ Uses the Civil War to Explore Modern Divisions')
     })
   })
 })
