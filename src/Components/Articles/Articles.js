@@ -2,6 +2,7 @@ import './Articles.css'
 import Card from '../Card/Card'
 import Search from '../Search/Search'
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Articles = ({ articles }) => {
 
@@ -9,10 +10,9 @@ const Articles = ({ articles }) => {
   const [searchInput, setSearchInput] = useState('')
 
   const filterArticles = event => {
-    const searchWord = event.target.value
-    if (searchWord) {
+    if (searchInput) {
       const foundArticles = articles.results.filter(article => {
-        if (article.title.includes(searchWord.toLowerCase())) {
+        if (article.title.toLowerCase().includes(searchInput.toLowerCase())) {
           return article
         }
       })
@@ -24,13 +24,13 @@ const Articles = ({ articles }) => {
     const articleCards = articles.results.map(card => {
       return (
         <>
-        <Card
-          title={card.title}
-          author={card.byline}
-          time={card.updated_date}
-          image={card.multimedia[0].url}
-        />
-        <hr />
+        <NavLink to={`/${card.title}`} style={{ textDecoration: 'none' }}>
+          <Card
+            title={card.title}
+            author={card.byline}
+          />
+        </NavLink>
+          <hr />
         </>
       )
     })
@@ -38,12 +38,12 @@ const Articles = ({ articles }) => {
       const filteredCards = (filteredArticles && filteredArticles.map(card => {
         return (
           <>
-          <Card
-            title={card.title}
-            author={card.byline}
-            time={card.updated_date}
-            image={card.multimedia[0].url}
-          />
+          <NavLink to={`/${card.title}`} style={{ textDecoration: 'none'}} >
+            <Card
+              title={card.title}
+              author={card.byline}
+            />
+          </NavLink>
           <hr />
           </>
         )

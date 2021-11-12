@@ -13,7 +13,7 @@ const Search = ({ filterArticles, setSearchInput, searchInput}) => {
       <input
         className='search-bar'
         type='text'
-        placeholder='search articles'
+        placeholder='Search articles'
         name='search'
         value={searchInput}
         onChange={event => handleChange(event)}
