@@ -57,6 +57,8 @@ The main goals of this project were to learn to prioritize meeting MVP with time
 
 * User can see additional details on details page
 
+* Add additional error handling and loading component while fetching data from API
+
 ## Technologies Used
 
 Utilizes JavaScript, React, CSS, HTML/JSX, NPM, Cypress
